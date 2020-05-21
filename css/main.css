@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    margin: 0;
+    padding: 2px;
+    height: 100%;
+    background-color: darkgrey;
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+body{
+    display: flex;
+    flex-direction:column; 
+}
+header{
+    background-image: radial-gradient( olive,black);
+    margin-bottom: 1rem;
+}
+#navbar{
+    display: flex; /* flex items are laid out in rows by default*/
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 35%;
+    background-image: linear-gradient(to right, purple 15%, yellow, red);
+    list-style-type: none;
+    
+    
+}
+li a{
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border-bottom: black solid 1px;
+    border-top: white solid 1px;
+    text-align: center;
+    background-color: white;
+}
+li:last-of-type a{
+    border-bottom: none;
+}
+li{
+    padding: 10px;
+    
+}
+/* styling the dropdown */
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: crimson;
+    box-shadow: black -1rem 1rem 1rem;
+}
+ #services:hover .dropdown{
+     display: block;
+     
+
+}
+/* styling the link animation */
+#navbar a:hover{
+    background-color: tomato;
+    border-radius: 50%;
+}
+#navbar a{
+    transition-property: border-radius;
+    transition-duration: 0.5s;
+}
+/* media query begins */
+@media all and (max-width: 600px){
+    html,    /* applying it to every html code*/
+    body{
+        max-width: 100%; /* all elements will not exceed 100% of the user's screen size*/
+        overflow-x: hidden; /* anything that happens off the x-axis of the page will be hidden*/
+    }
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; /* shortcut will be flex-flow for column and wrap*/
+        align-items:center;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+    }
+    #navbar .dropdown{
+        position: relative;
+        left: 4rem;
+    }
+    
+    footer{
+        display: flex;
+        flex-flow: column wrap;   
+    }
+    
+}
+
+@media all and (max-width: 1024px){
+    html,
+    body{
+        max-width: 100%;
+        overflow-x: hidden;
+
+    }
+    #navbar{
+        display: flex;
+        flex-wrap:wrap; /* shortcut will be flex-flow for column and wrap*/
+        align-items: center;
+        justify-content:space-between;
+        margin: 0;
+        padding: 0;
+        width: 50%;
+    }
+}
+/* media query ends */
+
