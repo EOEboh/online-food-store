@@ -1,0 +1,27 @@
+.subheading,
+#order-nav{
+    color: wheat;
+    list-style-type: square;
+    font-style: italic;
+}
+h1{
+    color: wheat;
+}
+.container-order{
+    display: flex;
+    flex-wrap: nowrap;
+}
+@media all and (max-width: 600px){
+    .container-order{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* food tips styling */
+a.food-tips{
+    text-decoration: none;
+    text-align: center;
+}
+a:hover{
+    color: yellow;
+}
