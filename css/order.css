@@ -1,8 +1,17 @@
+.subheading{
+    text-align: center;
+}
 .subheading,
 #order-nav{
     color: wheat;
-    list-style-type: square;
     font-style: italic;
+}
+#order-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style:inside; /* this makes the bullet markers stay close to the list*/
+    list-style-type: square;
 }
 h1{
     color: wheat;
@@ -24,4 +33,25 @@ a.food-tips{
 }
 a:hover{
     color: yellow;
+}
+#food{
+    padding: .5rem;
+    background-color: rosybrown;
+}
+#quantity{
+    padding: .2rem;
+    background-color: rosybrown;
+}
+#textarea{
+    background-color: rosybrown;
+}
+#submit{
+    padding: .5rem;
+    background-color: gold;
+    font-weight: 800;
+    outline: black solid 3px;
+}
+/* styling all the options with "value" attribute */
+option[value] {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
