@@ -20,6 +20,7 @@ body{
 header{
     background-image: radial-gradient( olive,black);
     margin-bottom: 1rem;
+    padding: 1rem;
 }
 #navbar{
     display: flex; /* flex items are laid out in rows by default*/
@@ -117,7 +118,7 @@ li{
 }
 /* media query ends */
 
-
+/* footer styling begins */
 footer{
     display: flex;
     flex-direction: column;
@@ -148,3 +149,4 @@ footer a:last-of-type{
 .fa-github{
     color: burlywood
 }
+/* footer styling ends */

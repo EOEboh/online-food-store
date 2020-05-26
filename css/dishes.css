@@ -1,0 +1,23 @@
+h1,
+h2{
+    color: wheat;
+}
+.container-order{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
+@media all and (max-width:600px){
+    .container-order{
+        display: flex;
+        flex-flow: column wrap;
+        align-content: space-between;
+        
+    }
+}
+@media all and (max-width:1024px){
+    .container-order{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
